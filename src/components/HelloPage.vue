@@ -7,6 +7,16 @@
       <p>Current time: {{ currentTime }}</p>
     </div>
     <button @click="updateGreeting" class="btn">Change Greeting</button>
+
+    <div class="dashboard-container">
+      <h2>Dashboard</h2>
+      <iframe
+        src="https://vizuro.embed-omniapp.co/dashboards/ded18b78"
+        class="dashboard-iframe"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </template>
 
@@ -51,7 +61,7 @@ export default {
 
 <style scoped>
 .hello-page {
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -109,5 +119,24 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.dashboard-container {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.dashboard-container h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-iframe {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 </style>
