@@ -11,7 +11,7 @@
     <div class="dashboard-container">
       <h2>Dashboard</h2>
       <iframe
-        src="https://vizuro.embed-omniapp.co/dashboards/ded18b78"
+        src="https://vizuro.embed-omniapp.co/dashboards/90fb3a25"
         class="dashboard-iframe"
         frameborder="0"
         allowfullscreen
